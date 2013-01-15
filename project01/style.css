@@ -1,0 +1,36 @@
+#heading{
+	background-color:rgb(195,195,195);
+}
+#subheading{
+	color:rgb(128,128,128);
+}
+#menubar {
+	background-color: black;
+	font-size: 16pt;
+}
+a:link {
+	text-decoration:none;
+	color:white;
+}
+a:visited {
+	text-decoration:none;
+	color:white;
+}
+a:hover {color:green;}
+a:active {
+	text-decoration:underline;
+	color:white;
+}
+#copyrights{
+	background-color:rgb(224,224,224);
+	text-align:center;
+}
+#progress {
+	background-color:rgb(222,222,222);
+	vertical-align:text-top;
+	height:100px;
+	width:285px;
+	float:right;
+}
+
+
