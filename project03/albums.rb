@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 require 'rack'
 require_relative 'album'
 
@@ -30,7 +31,7 @@ class AlbumApp
 
     albums = File.readlines("top_100_albums.txt").each_with_index.map { |record, i| Album.new(i + 1, record) }
 
-    albums.sort! { |l, r| l.send(sort_order.intern) <=> r.send(sort_order.intern) } # HUGE SECURITY HOLE
+    albums.sort! { |l, r| l.send(sort_order.intern) <=> r.send(sort_order.intern) }  # HUGE SECURITY HOLE
 
     response.write("<table>\n")
     write_album_table_rows(albums, response, rank_to_highlight)
