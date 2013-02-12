@@ -1,7 +1,7 @@
-<p>Sorted by <%= #{sort_order.capitalize} %> </p>
+<p>Sorted by <%= params[:order].capitalize %> </p>
 	<table>
-		<% albums.each do |album| %>
-		<%= album.rank == rank_to_highlight ? "\t<tr class=\"highlighted\">\n" : "\t<tr>\n" %>
+		<% @albums.each do |album| %>
+		<%= album.rank==params[:rank].to_i ? "\t<tr class=\"highlighted\">\n" : "\t<tr>\n" %>
 		<%= "\t\t<td>#{album.rank}</td>\n" %>
 		<%= "\t\t<td>#{album.title}</td>\n" %>
 		<%= "\t\t<td>#{album.year}</td>\n" %>
