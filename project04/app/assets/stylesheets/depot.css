@@ -40,14 +40,14 @@
         background-color: #f0f0f0;
         font: bold smaller sans-serif;
 }
-
-
 #store h1 {
         font:  150% sans-serif;
         color: #226;
         border-bottom: 3px dotted #77d;
 }
-
+#store .entry form, #store .entry form div{
+	display :inline;
+}
 /* Styles for products/index */
 
 #product_list table {
